@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biodata.css">
+    <title>Halaman Biodata Lengkap</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <Legend>Formulir Biodata Diri</Legend>
+
+                <p>Nama Lengkap : <input type="text" name="name" placeholder="Masukkan nama Anda"></p>
+                <p>Tempat, Tanggal Lahir : <input type="text" name="ttl" placeholder="Contoh: Semarang, 1 Januari 2000"></p>
+                <p>Alamat Lengkap : <input type="text" name="alamat" placeholder="Jalan, Nomor, RT/RW, Kelurahan, Kecamatan"></p>
+                <p>Email : <input type="email" name="email" placeholder="contoh@domain.com"></p>
+                <p>Nomor Telepon : <input type="tel" name="phone" placeholder="Contoh: 081234567890"></p>
+                <p>Jenis Kelamin :
+                    <input type="radio" name="jk" value="laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="perempuan"> Perempuan
+                </p>
+                <p>Pendidikan Terakhir :
+                    <select name="pendidikan">
+                        <option value="">Pilih</option>
+                        <option value="SMA/SMK">SMA/SMK</option>
+                        <option value="D3">Diploma (D3)</option>
+                        <option value="S1">Sarjana (S1)</option>
+                        <option value="S2">Magister (S2)</option>
+                        <option value="S3">Doktor (S3)</option>
+                    </select>
+                </p>
+                <p>
+                    Keterampilan yang Dikuasai: <br>
+                        <input type="checkbox" name="programming"> Pemrograman Web
+                        <input type="checkbox" name="design"> Desain Grafis
+                        <input type="checkbox" name="writing"> Menulis Konten
+                        <input type="checkbox" name="communication"> Komunikasi
+                </p>
+                <p>
+                    Pengalaman Kerja (jika ada) : <br>
+                    <textarea rows="5" cols="60" name="pengalaman" placeholder="Tuliskan pengalaman kerja Anda, contoh: Junior Web Developer di PT. ABC (2022-2024)"></textarea>
+                </p>
+                <p>
+                    Motivasi/Deskripsi Diri Singkat: <br>
+                    <textarea rows="7" cols="60" name="motivasi" placeholder="Jelaskan secara singkat tentang diri Anda dan motivasi Anda."></textarea>
+                </p>
+                <p><input type="submit" value="Kirim Biodata"></p>
+        </fieldset>
+    </form>
+
+    <button class="back"><a href="index.html">Kembali ke Home</a></button>
+</body>
+</html>
